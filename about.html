@@ -1,27 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/16d57c9235.js" crossorigin="anonymous"></script>
-      
-      
-    </head>
-    <body>
-        <div class="menu-bar" >
-            <a href="index.html" class="active"><i class="fa-sharp-duotone fa-solid fa-house"></i>Home</a>
-            <a href="about.html"><i class="fa-sharp-duotone fa-solid fa-search"></i>About</a>
-            <a href="about.html"><i class="fa-sharp-duotone fa-solid fa-message"></i>Contact</a>
-            <a href="about.html"><i class="fa-sharp-duotone fa-solid fa-user"></i>Login</a>
-          </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Jaehyeong</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/16d57c9235.js" crossorigin="anonymous"></script>
 
-        <h1 class="cmiddle">Welcome</h1>
-        <h2>I enrolled at Liberty University in 2020.</h2>
-        <h2>I served in the South Korean military for 1 year and 6 months.</h2>
-        <h2></h2>
-        <p>Matthew 5:13-14 (NIV)</p>
-        <p> “You are the salt of the earth. But if the salt loses its saltiness, how can it be made salty again? It is no longer good for anything, except to be thrown out and trampled underfoot.
-            You are the light of the world. A town built on a hill cannot be hidden."</p>
-    </body>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .embedded-text {
+            color: green;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .highlight {
+            color: darkblue;
+            font-weight: bold;
+        }
+
+        .embedded-box {
+            background-color: #ffebcd;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            margin: 20px auto;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-bar">
+        <a href="index.html"><i class="fa-sharp-duotone fa-solid fa-house"></i> Home</a>
+        <a href="about.html" class="active"><i class="fa-sharp-duotone fa-solid fa-search"></i> About</a>
+        <a href="about.html"><i class="fa-sharp-duotone fa-solid fa-message"></i> Contact</a>
+        <a href="about.html"><i class="fa-sharp-duotone fa-solid fa-user"></i> Login</a>
+    </div>
+    
+
+    <h1 class="cmiddle" style="color: red; text-align: center; font-size: 45px;">Welcome</h1>
+
+    <h2 style="color: darkgreen; text-align: center;">I enrolled at Liberty University in 2020.</h2>
+    <h2 style="color: darkgreen; text-align: center;">I served in the South Korean military for 1 year and 6 months.</h2>
+
+    <p class="embedded-text">Matthew 5:13-14 (NIV)</p>
+
+    <p class="highlight">
+        “You are the salt of the earth. But if the salt loses its saltiness, how can it be made salty again?
+        It is no longer good for anything, except to be thrown out and trampled underfoot.
+        You are the light of the world. A town built on a hill cannot be hidden."
+    </p>
+
+    <div id="special-section">
+        <form action="/action_page.php">
+          <label for="email">Enter your email:</label>
+          <input type="email" id="email" name="email">
+          <input type="submit">
+        </form>
+      </div>
+  
+      <div class="embedded-box">
+          &copy; 434-123-4567| Lychburg, VA 24502| 
+      </div>
+  
+</body>
 </html>

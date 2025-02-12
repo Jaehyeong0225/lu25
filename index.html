@@ -5,67 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaehyeong</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script> 
+    <script src="proj2.js" defer></script>
     <script src="https://kit.fontawesome.com/16d57c9235.js" crossorigin="anonymous"></script>
-
-    <style>
-        body {
-            background-color: #f9f9f9;
-        }
-
-        .embedded-text {
-            color: rgb(82, 207, 191);
-            font-style: italic;
-            text-align: center;
-        }
-
-        .highlight {
-            color: rgb(170, 75, 170);
-            font-weight: bold;
-        }
-
-        .embedded-box {
-            background-color: #ffebcd;
-            padding: 15px;
-            border-radius: 10px;
-            text-align: center;
-            font-weight: bold;
-            margin: 20px auto;
-            width: 80%;
-        }
-
-    </style>
 </head>
 <body>
-
-
     <nav class="menu-bar">
         <a href="index.html"><i class="fa-sharp-duotone fa-solid fa-house"></i> Home</a>
-        <a href="about.html"> <i class="fa-sharp-duotone fa-solid fa-search"></i> About</a>
+        <a href="about.html"><i class="fa-sharp-duotone fa-solid fa-search"></i> About</a>
         <a href="contact.html"><i class="fa-sharp-duotone fa-solid fa-message"></i> Contact</a>
         <a href="login.html"><i class="fa-sharp-duotone fa-solid fa-user"></i> Login</a>
     </nav>
 
-
     <h1 style="color: rgb(78, 212, 230); text-align: center; font-size: 50px;">Welcome</h1>
-
     <h3 class="embedded-text">I'm from South Korea</h3>
-
 
     <p class="middle highlight" style="font-size: 25px; color: rgb(81, 235, 189);">
         The website idea I want to create is a platform where I can sell my own recipes or food that I have made.
     </p>
 
     <div id="special-section">
-      <form action="/action_page.php">
-        <label for="email">Enter your email:</label>
-        <input type="email" id="email" name="email">
-        <input type="submit">
-      </form>
+        <form id="userForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <input type="submit" value="submit">
+        </form>
+
+        <div id="result"></div>
     </div>
 
     <div class="embedded-box">
-        &copy; 434-123-4567| Lychburg, VA 24502| 
+        &copy; 434-123-4567 | Lynchburg, VA 24502
     </div>
 
 </body>

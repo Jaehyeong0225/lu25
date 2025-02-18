@@ -1,23 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("userForm");
+    console.log("proj3.js is successfully loaded!");
+
     const resultDiv = document.getElementById("result");
 
-    form.addEventListener("submit", function (event) {
-        event.preventDefault(); 
-
-        const name = document.getElementById("name").value.trim();
-        const age = document.getElementById("age").value.trim();
-
-        if (name === "" || age === "") {
-            resultDiv.innerHTML = "<p style='color:red;'>Please fill in all fields.</p>";
-            return;
-        }
-
-        const ageInMonths = age * 12;
-        const message = `<p>Hello, ${name}! You have lived for ${ageInMonths} months.</p>`;
-
-        resultDiv.innerHTML = message;
-
-        console.log(`Name: ${name}, Age: ${age} years (${ageInMonths} months)`);
+    document.getElementById("userForm").addEventListener("submit", function (event) {
+        setTimeout(() => { 
+            const message = resultDiv.innerHTML;
+            
+            if (message.includes("You have lived for")) {
+                resultDiv.innerHTML += `<p style="color: blue;">Keep going strong! </p>`;
+                console.log("Additional motivation message added from proj3.js");
+            }
+        }, 100);
     });
 });

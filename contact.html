@@ -11,32 +11,36 @@
 <body>
 
     <nav class="menu-bar">
-        <a href="index.html"><i class="fa-sharp-duotone fa-solid fa-house"></i> Home</a>
-        <a href="about.html"> <i class="fa-sharp-duotone fa-solid fa-search"></i> About</a>
-        <a href="contact.html"><i class="fa-sharp-duotone fa-solid fa-message"></i> Contact</a>
-        <a href="login.html"><i class="fa-sharp-duotone fa-solid fa-user"></i> Login</a>
+        <a href="index.html"><i class="fa-sharp-duotone fa-solid fa-house"></i>Home</a>
+        <a href="about.html"> <i class="fa-sharp-duotone fa-solid fa-search"></i>About</a>
+        <a href="contact.html"><i class="fa-sharp-duotone fa-solid fa-message"></i>Contact</a>
+        <a href="login.html"><i class="fa-sharp-duotone fa-solid fa-user"></i>Login</a>
     </nav>
 
     <h1>Welcome</h1>
 
-    <h2>I enrolled at Liberty University in 2020.</h2>
-    <h2>I served in the South Korean military for 1 year and 6 months.</h2>
+    <h2>I can Speak Korean and English</h2>
+    <h2>My best desert is banana pudding</h2>
 
-    <p class="embedded-text">Matthew 5:13-14 (NIV)</p>
+    <p class="embedded-text">My Favorite Bible Verses</p>
 
     <p class="highlight">
-        “You are the salt of the earth. But if the salt loses its saltiness, how can it be made salty again?
-        It is no longer good for anything, except to be thrown out and trampled underfoot.
-        You are the light of the world. A town built on a hill cannot be hidden."
+        1 Corinthians 10:13
+        No temptation has overtaken you except what is common to mankind. And God is faithful; he will not let you be tempted beyond what you can bear. But when you are tempted, he will also provide a way out so that you can endure it.
     </p>
 
     <div id="special-section">
-        <form action="/action_page.php">
-          <label for="email">Enter your email:</label>
-          <input type="email" id="email" name="email">
-          <input type="submit">
+        <form id="userForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <input type="submit" value="submit">
         </form>
-      </div>
+        <div id="result"></div>
+    </div>
   
     <div class="embedded-box">
         &copy; 434-123-4567 | Lynchburg, VA 24502

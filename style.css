@@ -2,6 +2,8 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .menu-bar {
@@ -36,6 +38,11 @@ h1 {
   color: rgb(78, 212, 230);
 }
 
+h3 {
+  color: #333;
+  font-size: 22px;
+}
+
 .embedded-text {
   color: rgb(82, 207, 191);
   font-style: italic;
@@ -48,32 +55,51 @@ h1 {
 }
 
 #special-section {
-  background-color: lightgray;
-  padding: 15px;
+  background-color: white;
+  padding: 20px;
   border-radius: 8px;
-  width: 39%;
-  margin: 10px auto;
-  text-align: center;
+  width: 50%;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-#special-section input[type="email"],
 #special-section input[type="text"],
 #special-section input[type="number"] {
-  padding: 8px;
-  width: 80%;
+  padding: 10px;
+  width: 90%;
   margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 #special-section input[type="submit"] {
   background-color: #44dac1;
   color: white;
-  padding: 10px 15px;
+  padding: 12px 15px;
   border: none;
   cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 #special-section input[type="submit"]:hover {
   background-color: #38b7a1;
+}
+
+#result {
+  background-color: #eef5f3;
+  padding: 15px;
+  border-radius: 8px;
+  width: 50%;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .embedded-box {

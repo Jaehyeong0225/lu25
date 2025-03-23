@@ -1,25 +1,21 @@
+
 document.addEventListener("DOMContentLoaded", function () {
-    const images = document.querySelectorAll(".image-gallery img");
+    const galleryImages = document.querySelectorAll(".image-gallery img");
 
-    images.forEach(img => {
+    galleryImages.forEach(img => {
         img.addEventListener("click", function () {
-            let existingOverlay = document.querySelector(".image-overlay");
-            if (existingOverlay) {
-                existingOverlay.remove();
-            }
+            const overlay = document.createElement("div");
+            overlay.className = "image-overlay";
 
-            let overlay = document.createElement("div");
-            overlay.classList.add("image-overlay");
-
-            let newImage = document.createElement("img");
-            newImage.src = this.src;
-            newImage.alt = "Overlay Image";
+            const largeImg = document.createElement("img");
+            largeImg.src = this.src; 
+            largeImg.alt = this.alt;
 
             overlay.addEventListener("click", function () {
-                overlay.remove();
+                document.body.removeChild(overlay);
             });
 
-            overlay.appendChild(newImage);
+            overlay.appendChild(largeImg);
             document.body.appendChild(overlay);
         });
     });

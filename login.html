@@ -13,9 +13,8 @@
   <script src="proj5.js" defer></script>
   <script src="proj6.js" defer></script>
   <script src="proj7.js" defer></script>
-  <script src="script.js" defer></script>
   <script src="objects.js" defer></script> 
-
+  <script src="proj9.js" defer></script>
 
   <script src="https://kit.fontawesome.com/16d57c9235.js" crossorigin="anonymous"></script>
 </head>
@@ -31,7 +30,7 @@
   <h1>Login to Your Account</h1>
 
   <div class="login-container">
-    <form>
+    <form id="loginForm">
       <label for="username">Username:</label>
       <input type="text" id="username" name="username" required />
 
@@ -39,6 +38,20 @@
       <input type="password" id="password" name="password" required />
 
       <input type="submit" value="Login" />
+    </form>
+
+    <form id="customForm" style="margin-top: 30px;">
+      <h3>Personalize Your Page</h3>
+      <label>Background Color:
+        <input type="color" name="bgColor">
+      </label><br><br>
+      <label>Text Color:
+        <input type="color" name="textColor">
+      </label><br><br>
+      <label>Font Size:
+        <input type="number" name="fontSize" min="10" max="40" /> px
+      </label><br><br>
+      <input type="submit" value="Apply Preferences">
     </form>
 
     <div class="extra-links">

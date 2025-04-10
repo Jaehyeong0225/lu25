@@ -50,7 +50,7 @@ function checkWin() {
   if (complete) {
     stopTimer();
     document.getElementById("successMsg").textContent =
-      `🎉 You matched all flags in ${time} seconds!`;
+      `You matched all flags in ${time} seconds!`;
   }
 }
 
